@@ -1,0 +1,39 @@
+header.header
+    .header-inner.container
+        .header__left
+            .header-burger__group
+                a(href="#menu")#toggle-menu
+                    div
+                        span 
+                    p.toggle-menu__title Меню
+                    p.toggle-menu__title--hidden Закрити
+                #menu.container
+                    ul.menu-list 
+                        li.menu-item 
+                            a(href="index.html").menu-link Інфографіка
+                        li.menu-item
+                            a(href="/#location").menu-link Про фонд
+                        li.menu-item
+                            a(href="#home").menu-link Про Хатинку
+                        li.menu-item 
+                            a(href="#home").menu-link Галерея
+                        li.menu-item
+                            a(href="/#details-main").menu-link Долучитись
+                        li.menu-item 
+                            a(href="construction.html").menu-link Новини
+                        li.menu-item 
+                            a(href="/#conditions").menu-link Документи
+                        li.menu-item
+                            a(href="news.html").menu-link FAQ
+        .header__center 
+            a(href='index.html').header__link
+                +svg('logo').header-logo__svg
+            
+        .header__right
+            .menu-langs
+                a(href='/ua').main-bottom__langs-switch UA
+                a(href='/ru').main-bottom__langs-switch.active EN
+            .standard-btn.header-btn
+                a(href="#").btn-link donate
+
+            

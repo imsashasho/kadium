@@ -1,0 +1,30 @@
+$xs: 767px;
+$sm: 1365px;
+$md: 1919px;
+
+@mixin media($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include media($xs) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media($sm) {
+    @content;
+  }
+}
+
+@mixin tabletLarge {
+  @include media($md) {
+    @content;
+  }
+}
+
+
+

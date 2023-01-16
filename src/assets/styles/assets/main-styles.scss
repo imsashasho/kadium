@@ -1,0 +1,21 @@
+.container {
+  padding: 0 80px;
+  margin: 0 auto;
+
+  @include tabletLarge {
+    padding: 0 70px;
+  }
+
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+  }
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
